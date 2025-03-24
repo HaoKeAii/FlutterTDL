@@ -38,7 +38,8 @@ class TodoProvider with ChangeNotifier {
   }
 
   Future<void> toggleTodoStatus(int index) async {
-    final doc = _firestore.collection('todos').doc(_todos[index].title);
+    final docId = _todos[index].id; 
+    final doc = _firestore.collection('todos').doc(docId);
     await doc.update({'isCompleted': !_todos[index].isCompleted});
   }
 

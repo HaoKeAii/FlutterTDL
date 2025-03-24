@@ -17,7 +17,9 @@ class _TodoScreenState extends State<TodoScreen> {
     final todoProvider = Provider.of<TodoProvider>(context);
 
     return Scaffold(
-      appBar: AppBar(title: const Text('To-Do List with Firestore')),
+      appBar: AppBar(
+        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+        title: const Text('To-Do List with Firestore')),
       body: Column(
         children: [
           Padding(
