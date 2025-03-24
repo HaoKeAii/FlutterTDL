@@ -19,7 +19,7 @@ class _TodoScreenState extends State<TodoScreen> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: const Text('To-Do List with Firestore')),
+        title: const Text('ToDoList')),
       body: Column(
         children: [
           Padding(
